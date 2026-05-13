@@ -6,5 +6,5 @@ let availableBalance = 100;
 let errorMessage = "Error: fill in all the fields";
 
 if (age >= 18) {
-    alert("You can get your driver's license!")
+    alert("You can get your driver's license!");
 }
