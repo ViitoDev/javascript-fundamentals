@@ -1,12 +1,13 @@
 alert("Welcome to the secret number game!");
-let secretNumber = parseInt(Math.random() * 100 + 1);
+let maxRange = 100;
+let secretNumber = parseInt(Math.random() * maxRange + 1);
 let guess;
 let attempts = 1;
 console.log(secretNumber);
 
 // As long as the guess doesn't match the secret number.
 while (guess != secretNumber) {
-	guess = prompt("Enter a number between 1 and 100.");
+	guess = prompt(`Enter a number between 1 and ${maxRange}.`);
 	if (guess == secretNumber) {
 		break;
 	} else {
